@@ -3,6 +3,8 @@
   --portrait-index: 2;
   --texture-index: 1;
   --font-color: #707070;
+  --code-gray: #1e1e1e;
+  --code-text: #848484;
 }
 
 * {
@@ -51,7 +53,7 @@ button {
 }
 
 .title-page {
-  margin-left: 11em;
+  margin-left: 9em;
   margin-top: 8em;
 }
 
@@ -74,7 +76,60 @@ button {
 }
 
 /*      ABOUT     */
+
+.about {
+  width: 100vw;
+  height: 200vh;
+}
+
+.about h1 {
+  margin-left: 4em;
+  font-size: 2.4em;
+  margin-top: 3em;
+}
+
+.code-area {
+  background-color: var(--code-gray);
+  color: var(--code-text);
+  width: 30%;
+  font-size: 1.4em;
+  margin-top: 3em;
+  margin-left: 7em;
+  padding: 10px;
+}
+
+.code-area span {
+  margin-right: 2em;
+  border-right: var(--code-text) 1px solid;
+  padding: 10px 1em 10px 5px;
+}
+
+.typing {
+  width: 18ch;
+  border-right: 2px solid var(--font-color);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 4s steps(18), caret 0.5s step-end infinite alternate;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
+}
+
 /*      WORKS     */
+
+.works {
+  width: 100vw;
+  height: 100vh;
+}
 
 @media all and (max-width: 1240px) {
   /*   HEADER    */
