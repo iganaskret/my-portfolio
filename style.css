@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700&display=swap");
+:root {
+  --portrait-index: 2;
+  --texture-index: 1;
+  --font-color: #707070;
+}
+
+* {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+  color: var(--font-color);
+}
+
+/*    HEADER    */
+
+header {
+  width: 100vw;
+  height: 100vh;
+}
+
+h3 {
+  margin-top: 1em;
+  margin-left: 1em;
+  font-size: 200%;
+}
+
+.title-page h1,
+button {
+  display: block;
+  font-size: 500%;
+  font-weight: 400;
+}
+
+.title-page h2 {
+  font-size: 200%;
+  font-style: italic;
+  margin-bottom: 3em;
+  word-spacing: 5px;
+}
+
+.title-page button {
+  border: none;
+  background-color: white;
+}
+
+.title-page button:hover {
+  cursor: pointer;
+  color: black;
+}
+
+.title-page {
+  margin-left: 11em;
+  margin-top: 8em;
+}
+
+#texture {
+  width: 30%;
+  display: block;
+  position: absolute;
+  right: 10%;
+  top: 10%;
+  z-index: var(--texture-index);
+}
+
+#portrait {
+  width: 25%;
+  display: block;
+  position: absolute;
+  right: 22%;
+  top: 30%;
+  z-index: var(--portrait-index);
+}
+
+/*      ABOUT     */
+/*      WORKS     */
+
+@media all and (max-width: 1240px) {
+  /*   HEADER    */
+  .title-page h1,
+  button {
+    font-size: 400%;
+  }
+
+  .title-page h2 {
+    font-size: 150%;
+  }
+
+  .title-page {
+    margin-left: 7em;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  /*   HEADER    */
+  .title-page h1,
+  button {
+    font-size: 250%;
+  }
+
+  .title-page h2 {
+    font-size: 80%;
+  }
+
+  .title-page {
+    margin-left: 4em;
+    margin-top: 4em;
+  }
+
+  #portrait {
+    right: 22%;
+    top: 20%;
+  }
+}
+
+@media all and (max-width: 570px) {
+  /*   HEADER    */
+  .images {
+    display: none;
+  }
+}
