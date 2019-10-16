@@ -97,16 +97,27 @@ button {
   font-size: 2.4em;
 }
 
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 5em;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 3em;
+  line-height: 33px;
+  font-size: 1.5em;
+}
+
+.skills {
+  display: block;
+}
+
 .code-area {
   background-color: var(--code-gray);
+  margin-top: 1em;
   color: var(--code-text);
-  width: 30%;
-  font-size: 1.4em;
-  margin-top: 3em;
-  display: block;
-  margin-left: 10%;
   padding: 10px;
-  line-height: 33px;
+  font-size: 1em;
   font-family: "Source Code Pro", monospace;
 }
 
@@ -114,6 +125,11 @@ button {
   margin-right: 2em;
   border-right: var(--code-text) 1px solid;
   padding: 10px 1em 10px 5px;
+}
+
+.more-about p {
+  text-align: justify;
+  margin-bottom: 2em;
 }
 
 .typing {
@@ -161,38 +177,38 @@ button {
   transform: scale(1.15);
 }
 
-.works-img :nth-child(1) {
+.works-img :nth-child(1) img {
   margin-left: 7%;
 }
 
-.works-img :nth-child(2) {
+.works-img :nth-child(2) img {
   margin-left: 35%;
   margin-top: -9%;
   margin-bottom: 8%;
 }
 
-.works-img :nth-child(3) {
+.works-img :nth-child(3) img {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 8%;
 }
 
-.works-img :nth-child(4) {
+.works-img :nth-child(4) img {
   margin-left: 50%;
 }
 
-.works-img :nth-child(5) {
+.works-img :nth-child(5) img {
   margin-left: 25%;
   margin-top: -9%;
   margin-bottom: 8%;
 }
 
-.works-img :nth-child(6) {
+.works-img :nth-child(6) img {
   margin-left: 10%;
   margin-bottom: -10%;
 }
 
-.works-img :nth-child(7) {
+.works-img :nth-child(7) img {
   margin-left: 55%;
   margin-bottom: 5%;
 }
