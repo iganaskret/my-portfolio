@@ -83,6 +83,10 @@ button {
   z-index: var(--portrait-index);
 }
 
+.works-btn {
+  cursor: pointer;
+}
+
 /*      ABOUT     */
 
 .about {
@@ -110,6 +114,7 @@ button {
 
 .skills {
   display: block;
+  width: 450px;
 }
 
 .code-area {
@@ -210,6 +215,12 @@ button {
 
 .works-img :nth-child(7) img {
   margin-left: 55%;
+  margin-bottom: 5%;
+}
+
+.works-img :nth-child(8) img {
+  margin-left: 5%;
+  margin-top: -1%;
   margin-bottom: 5%;
 }
 
