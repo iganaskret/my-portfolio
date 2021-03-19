@@ -1,9 +1,25 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700|Source+Code+Pro:300,400&display=swap");
 
+@font-face {
+  font-family: Avenir Heavy;
+  src: url(fonts/Avenir/AvenirLTStd-Heavy.otf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Avenir Book;
+  src: url(fonts/Avenir/AvenirLTStd-Book.otf);
+}
+
+@font-face {
+  font-family: Avenir Medium;
+  src: url(fonts/Avenir/AvenirLTStd-Medium.otf);
+}
+
 :root {
   --portrait-index: 2;
   --texture-index: 1;
-  --font-color: #707070;
+  --font-color: #030067;
   --bg-color: #f5f4f4;
   --code-gray: #1e1e1e;
   --code-text: #848484;
@@ -19,7 +35,9 @@
 }
 
 body {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Avenir Medium", sans-serif;
+  word-spacing: 1.5px;
+  letter-spacing: 1.5px;
   background-color: var(--bg-color);
 }
 
@@ -33,13 +51,13 @@ header {
 h3 {
   margin-top: 1em;
   margin-left: 1em;
-  font-size: 200%;
+  font-size: 150%;
 }
 
 .title-page h1,
 button {
   display: block;
-  font-size: 500%;
+  font-size: 400%;
   font-weight: 400;
 }
 
@@ -57,7 +75,7 @@ button {
 
 .title-page button:hover {
   cursor: pointer;
-  color: black;
+  opacity: 0.8;
 }
 
 .title-page {
@@ -70,7 +88,7 @@ button {
   display: block;
   position: absolute;
   right: 10%;
-  top: 10%;
+  top: 20%;
   z-index: var(--texture-index);
 }
 
@@ -78,8 +96,8 @@ button {
   width: 25%;
   display: block;
   position: absolute;
-  right: 22%;
-  top: 30%;
+  right: 14%;
+  top: 18%;
   z-index: var(--portrait-index);
 }
 
@@ -97,14 +115,14 @@ button {
 
 .about h1,
 .works h1 {
-  margin-left: 1em;
+  margin: 0 2em;
   font-size: 2.4em;
 }
 
 .about-grid {
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-gap: 5em;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 4em;
   margin-left: 10%;
   margin-right: 10%;
   margin-top: 3em;
@@ -114,22 +132,34 @@ button {
 
 .skills {
   display: block;
-  width: 450px;
+  width: auto;
 }
 
 .code-area {
   background-color: var(--code-gray);
   margin-top: 1em;
-  color: var(--code-text);
-  padding: 10px;
-  font-size: 1em;
+  padding: 12px;
+  font-size: 0.9em;
+
   font-family: "Source Code Pro", monospace;
+}
+
+.code-area p {
+  color: #f7e2e2;
 }
 
 .code-area span {
   margin-right: 2em;
   border-right: var(--code-text) 1px solid;
   padding: 10px 1em 10px 5px;
+  color: #f7e2e2;
+}
+
+.code-area span.invisible {
+  margin-right: 0;
+  padding: 0;
+  border: none;
+  opacity: 0;
 }
 
 .more-about p {
@@ -171,11 +201,28 @@ button {
   margin-bottom: 5%;
 }
 
+.works h2 {
+  font-size: 2em;
+  margin-left: 2.5em;
+  margin-bottom: 1em;
+}
+
+.works div.current-work img {
+  display: block;
+  margin: 2em auto 5em;
+}
+
+.works p {
+  font-size: 1em;
+  margin-left: 5em;
+}
+
 .works-img img {
   width: 40%;
   display: block;
   transition-property: transform, scale;
   transition: 0.2s ease-in-out;
+  border: 5px solid #9ad3b1;
 }
 
 .works-img img:hover {
@@ -221,6 +268,12 @@ button {
 .works-img :nth-child(8) img {
   margin-left: 5%;
   margin-top: -1%;
+  margin-bottom: 5%;
+}
+
+.works-img :nth-child(9) img {
+  margin-left: 55%;
+  margin-top: -10%;
   margin-bottom: 5%;
 }
 
